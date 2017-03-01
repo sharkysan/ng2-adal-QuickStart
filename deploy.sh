@@ -117,7 +117,7 @@ if [ -e "$DEPLOYMENT_TARGET/package.json" ]; then
   cd - > /dev/null
 fi
 
-eval $NPM_CMD start
+eval $NPM_CMD run tsc
 
 ##################################################################################################################################
 echo "Finished successfully."
